@@ -71,18 +71,22 @@ body {
   .btn-small {
     height: 2.5em;
     width: 4.5em;
+    border-radius: 8px;
   }
   .btn-medium {
     height: 3em;
     width: 6em;
+    border-radius: 8px;
   }
   .btn-large {
     height: 3em;
     width: 8em;
+    border-radius: 8px;
   }
   .btn-xLarge {
     height: 3em;
     width: 10em;
+    border-radius: 8px;
   }
 
   .purple {
