@@ -1,40 +1,19 @@
 :root {
+  /* THEME COLORS */
+  --black: #0a2e36;
+  --white: #fbfaf8;
+  --gray: #6c757d;
+  --orange: #ff9f1c;
+  --blue: #3da5d9;
+  --green: #3fa34d;
+
   /* PASTEL:*/
-  --pastel-pink: #ffb3ba;
-  --pastel-orange: #ffdfba;
   --pastel-yellow: #ffffba;
   --pastel-green: #baffc9;
-  --pastel-blue: #bae1ff;
-  --pastel-red: #ff6961;
   --pastel-purple: #b0b1d9;
 
   /* BRIGHT:*/
-  --blue: #007bff;
-  --indigo: #6610f2;
   --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fdfdfd;
-
-  /**/
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-
-  /* DARK:*/
-  --dark: #343a40;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --dark-burgundy: #262626;
 }
 
 body {
@@ -43,7 +22,7 @@ body {
 }
 
 p {
-  color: var(--dark-burgundy);
+  color: var(--black);
 }
 
 /* MISC [GENERAL] STYLING */
@@ -87,31 +66,31 @@ details summary {
 
 .purple {
   background-color: var(--pastel-purple);
-  color: var(--gray-dark);
-  border: 1px solid var(--gray-dark);
+  color: var(--black);
+  border: 1px solid var(--black);
 }
 .purple:hover,
 .purple:focus {
-  border: 1px solid var(--gray-dark);
+  border: 1px solid var(--black);
 }
 
 .yellow {
   background-color: var(--pastel-yellow);
-  color: var(--gray-dark);
-  border: 1px solid var(--gray-dark);
+  color: var(--black);
+  border: 1px solid var(--black);
 }
 .yellow:hover,
 .yellow:focus {
-  border: 1px solid var(--gray-dark);
+  border: 1px solid var(--black);
 }
 .green {
   background-color: var(--pastel-green);
-  color: var(--gray-dark);
-  border: 1px solid var(--gray-dark);
+  color: var(--black);
+  border: 1px solid var(--black);
 }
 .green:hover,
 .green:focus {
-  border: 1px solid var(--gray-dark);
+  border: 1px solid var(--black);
 }
 
 /* WELCOME SCREEN */
