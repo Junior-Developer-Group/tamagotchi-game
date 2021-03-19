@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pink Fairy Armadillo</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
 
-  <body>
-    <section class="welcome-screen-wrapper">
-      <div class="welcome-screen">
-        <div class="welcome-screen-title">
-          <h1>WELCOME</h1>
-        </div>
-        <div class="game-information">
-          <details>
-            <summary>About</summary>
-            <p>
-              A game inspired by Tamagotchi mechanics, which revolve around
-              taking care of a pet. The pet in our game is going to be a pink
-              fairy armadillo, and there will be a page introducing the
-              armadillo and highlighting conservation efforts towards it.
-            </p>
-          </details>
-        </div>
+<head>
+  <title>Pink Fairy Armadillo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-        <div class="game-instructions">
-          <details>
-            <summary>How to play</summary>
-            <button>Learn how to play the game</button>
-          </details>
-        </div>
-
-        <div class="game-controls">
-          <button class="btn-xLarge green">Start Game</button>
-          <button class="btn-xLarge yellow">Configure Pet</button>
-          <br />
-          <button class="btn-xLarge">
-            <i class="fa fa-cutlery fa-2x"></i>
-          </button>
-          <button class="btn-xLarge"><i class="fa fa-bath fa-2x"></i></button>
-          <button class="btn-xLarge"><i class="fa fa-coffee fa-2x"></i></button>
-          <button class="btn-xLarge"><i class="fa fa-medkit fa-2x"></i></button>
-          <button class="btn-xLarge"><i class="fa fa-bed fa-2x"></i></button>
-        </div>
+<body>
+  <section class="welcome-screen-wrapper">
+    <div class="welcome-screen">
+      <div class="welcome-screen-title">
+        <h1>WELCOME</h1>
       </div>
-    </section>
-  </body>
+      <div class="game-information">
+        <details>
+          <summary>About</summary>
+          <p>
+            A game inspired by Tamagotchi mechanics, which revolve around
+            taking care of a pet. The pet in our game is going to be a pink
+            fairy armadillo, and there will be a page introducing the
+            armadillo and highlighting conservation efforts towards it.
+          </p>
+        </details>
+      </div>
+
+      <div class="game-instructions">
+        <details>
+          <summary>How to play</summary>
+          <button id="instructions">Learn how to play the game</button>
+        </details>
+      </div>
+
+      <div class="game-controls">
+        <button class="btn-xLarge green">Start Game</button>
+        <button id="configurePet" class="btn-xLarge yellow">Configure Pet</button>
+        <br />
+        <button class="btn-xLarge">
+          <i class="fa fa-cutlery fa-2x"></i>
+        </button>
+        <button class="btn-xLarge"><i class="fa fa-bath fa-2x"></i></button>
+        <button class="btn-xLarge"><i class="fa fa-coffee fa-2x"></i></button>
+        <button class="btn-xLarge"><i class="fa fa-medkit fa-2x"></i></button>
+        <button class="btn-xLarge"><i class="fa fa-bed fa-2x"></i></button>
+      </div>
+    </div>
+  </section>
+  <!--Pop up modal with game instructions-->
+  <div class="instructionsModal">
+    <div class="instructionsModal-content">
+      <span class="instructionsModalClose">&times;</span>
+      <h2>How to Play with your Pet:</h2>
+      <p>You need to perform actions with your pet in order to keep it happy and healthy. If you do not keep it happy
+        and healthy your pets health bar will go down and he may become sick or leave you for a more caring owner!</p>
+      <p>Your pet will be able to tell if your pet is happy or sad as his image will change depending on how well you
+        are
+        looking after him.</p>
+      <p>Do the following actions by clicking on the relevent buttons:</p>
+      <p>Feed your pet by clicking on the food button: </p>
+      <p>Water your pet by clicking on the water button: </p>
+      <p>Play with your pet by clicking on the play button: </p>
+      <p>Feed your pet by clicking on the food button: </p>
+      <p>Give your pet medicine if it is ill -click the button: </p>
+      <p>Sleep is really important for your pet, dont forget to put him to bed:</p>
+      <div class="button">
+        <button class="play">Play</a></button>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Pop up modal to configure your pet-->
+  <div class="configurePetModal">
+    <div class="petModal-content">
+      <span class="petModalClose">&times;</span>
+      <h2>Configure your pet:</h2>
+      <div class="petImage">
+        <img class="petModalImage" src="./assets/images/Armadillo Happy.svg" alt="Pink fairy armadillo illustration.">
+      </div>
+      <form>
+        <label for="name">Pet's Name: </label> <input type="text" id="name" name="name">
+      </form>
+      <button class="save">Save</button>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
 </html>

@@ -145,3 +145,186 @@ details summary {
   }
 }
 /* WELCOME SCREEN ANIMATION end */
+
+
+ /* Styles for the modal pop to configure your pet*/
+ .configurePetModal{
+  display: none;
+  position: fixed; 
+  padding-top:3em;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow:auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.6); 
+
+}
+.petModal-content {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  border-radius:0.4em;
+  letter-spacing:0.1em;
+  color:var(--black);
+  background-color:var(--pastel-purple);
+  border:0.5em solid var(--purple);
+  padding: 1.5em; 
+  margin: auto; 
+  width:50%;
+}
+.petModal-content h2{
+  width:100%;
+  text-align:center;
+  font-size:1.6em;
+  margin:0;
+  
+  
+}
+.petImage{
+text-align:center;
+}
+.petModal-content img{
+  width:100%;
+  height:100%;
+}
+.petModal-content span{
+  width:100%;
+  margin-left:94%;
+  
+}
+.petModal-content form{
+  font-size:1.2em;
+}
+.petModal-content label{
+  font-size:1.2em;
+  font-weight:500;
+}
+.petModal-content input{
+  padding: 0.5em;
+  font-size:0.8em;
+  border:0.1em solid var(--purple);
+  border-radius:0.6em;
+  box-shadow:0 0 15px 4px rgba(228, 177, 177, 0.06);
+  margin:1em;
+}
+
+.save{
+  text-align:center;
+  text-decoration:none;
+  color:var(--black);
+  background-color: var(--pastel-purple);
+  padding:0.8em 2em;
+  margin:auto;
+  font-size:1em;
+  font-weight:500;
+  border-radius: 0.3em;
+  border:0.1em solid var(--purple);
+}
+
+.save:hover{
+  border: 0.2em solid var(--purple);
+}
+.petModalClose {
+  width:50%;
+  color: var(--purple); 
+  font-size: 2em;  
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+ /* Styles for the game instructions modal*/
+ .instructionsModal{
+  display: none;
+  position: fixed; 
+  padding-top:3em;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow:auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.6); 
+
+}
+.instructionsModal-content {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  border-radius:0.4em;
+  letter-spacing:0.1em;
+  color:var(--black);
+  background-color:var(--pastel-purple);
+  border:0.5em solid var(--purple);
+  padding: 1.5em; 
+  margin: auto; 
+  width:50%;
+}
+.instructionsModal-content h2{
+  width:100%;
+  text-align:center;
+  font-size:1.6em;
+  
+  
+}
+.instructionsModal-content img{
+  width:50%;
+  height:40%;
+}
+.instructionsModal-content span{
+  width:100%;
+  margin-left:94%;
+  
+}
+.instructionsModal-content p{
+  width:100%;
+  margin:0.01em;
+ color:var(--dark);
+  
+}
+.instructionsModal-content form{
+  font-size:1.2em;
+}
+.instructionsModal-content label{
+  font-size:1.2em;
+  font-weight:500;
+}
+.instructionsModal-content input{
+  padding: 0.5em;
+  font-size:0.8em;
+  border:0.1em solid var(--purple);
+  border-radius:0.6em;
+  box-shadow:0 0 15px 4px rgba(228, 177, 177, 0.06);
+  margin:1em;
+}
+
+.play{
+  text-align:center;
+  text-decoration:none;
+  color:var(--black);
+  background-color: var(--pastel-purple);
+  padding:0.8em 2em;
+  margin:auto;
+  font-size:1em;
+  font-weight:500;
+  border-radius: 0.3em;
+  border:0.1em solid var(--purple);
+}
+
+.button{
+  padding:2em;
+}
+.play:hover{
+  border: 0.2em solid var(--purple);
+}
+.instructionsModalClose {
+  width:50%;
+  color: var(--purple); 
+  font-size: 2em;  
+  font-weight: bold;
+  cursor: pointer;
+}
