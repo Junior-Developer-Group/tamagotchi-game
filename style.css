@@ -7,22 +7,19 @@
   --blue: #3da5d9;
   --green: #3fa34d;
 
-  /* PASTEL:*/
-  --pastel-yellow: #ffffba;
-  --pastel-green: #baffc9;
-  --pastel-purple: #b0b1d9;
-
-  /* BRIGHT:*/
-  --purple: #6f42c1;
+  /* VARIATIONS ON THEME COLORS */
+  --light-blue: #e4f2fa;
+  --dark-green: #286831;
+  --dark-blue: #217ba7;
 }
 
 body {
-  background-color: #dfdbe5;
-  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: var(--light-blue);
+  background-image: url(./assets/images/xs_and_os.svg);
 }
 
 p {
-  color: var(--black);
+  color: var(--gray);
 }
 
 /* MISC [GENERAL] STYLING */
@@ -31,7 +28,7 @@ details {
 }
 
 details summary::-webkit-details-marker {
-  color: var(--purple);
+  color: var(--gray);
   border: none;
 }
 details summary:focus {
@@ -39,7 +36,7 @@ details summary:focus {
   border: none;
 }
 details summary {
-  color: var(--pastel-purple);
+  color: var(--gray);
   font-size: 2em;
 }
 /* CUSTOM BUTTONS */
@@ -64,29 +61,19 @@ details summary {
   border-radius: 8px;
 }
 
-.purple {
-  background-color: var(--pastel-purple);
-  color: var(--black);
-  border: 1px solid var(--black);
+.blue {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
 }
-.purple:hover,
-.purple:focus {
-  border: 1px solid var(--black);
-}
-
-.yellow {
-  background-color: var(--pastel-yellow);
-  color: var(--black);
-  border: 1px solid var(--black);
-}
-.yellow:hover,
-.yellow:focus {
+.blue:hover,
+.blue:focus {
   border: 1px solid var(--black);
 }
 .green {
-  background-color: var(--pastel-green);
-  color: var(--black);
-  border: 1px solid var(--black);
+  background-color: var(--white);
+  color: var(--dark-green);
+  border: 1px solid var(--dark-green);
 }
 .green:hover,
 .green:focus {
@@ -98,7 +85,6 @@ details summary {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: darken(var(--pastel-purple), 10%);
 
   position: relative;
   top: 10em;
@@ -121,7 +107,7 @@ details summary {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 
-  color: var(--purple);
+  color: var(--gray);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 2em;
